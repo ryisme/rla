@@ -650,7 +650,7 @@ coroutine.wrap(ORHZAQC_fake_script)()
 
 game.StarterGui:SetCore("SendNotification", {
                Title = "NERD🤓 bypassed";
-               Duration = 0.6;
+               Duration = 2;
                Text = "";
 })
 local GSR = game:GetService('ReplicatedStorage')
