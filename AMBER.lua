@@ -649,8 +649,8 @@ coroutine.wrap(ORHZAQC_fake_script)()
 
 
 game.StarterGui:SetCore("SendNotification", {
-               Title = "🤓BYPASSED";
-               Duration = 4;
+               Title = "ME & HER";
+               Duration = 5;
                Text = "";
 })
 local GSR = game:GetService('ReplicatedStorage')
@@ -670,4 +670,24 @@ if GSRR:FindFirstChild('crateDevProduct') then
 GSRR:FindFirstChild('crateDevProduct').Name = 'YoshinoBestFr'
 print('Disabled Anti-Cheat.')
 end 
+end
+
+
+local AC = false
+local Key = Enum.KeyCode.V
+
+game:GetService("UserInputService").InputBegan:Connect(function(k,g)
+  if not g and k.KeyCode == Key then
+    AC = not AC
+  end
+end)
+
+while wait() do
+  if AC then
+     pcall(function()
+       local Sword = game:GetService'Players'.LocalPlayer.Character:FindFirstChildOfClass'Tool'
+Sword:Activate()
+ Sword:Activate()
+            end)
+  end
 end
