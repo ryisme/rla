@@ -648,7 +648,11 @@ end
 coroutine.wrap(ORHZAQC_fake_script)()
 
 
-
+game.StarterGui:SetCore("SendNotification", {
+               Title = "🤓BYPASSED";
+               Duration = 55;
+               Text = "";
+})
 local GSR = game:GetService('ReplicatedStorage')
 local GSRR = GSR:FindFirstChild('Remotes')
 
