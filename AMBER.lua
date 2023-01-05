@@ -180,47 +180,47 @@ local function XBVMGTZ_fake_script() -- SPEED.LocalScript
 
 	SPEED.MouseButton1Click:connect(function()
 		--memorize--
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "SPEED";
-			Duration = 0.3;
-			Text = "";
-	
-		})
-		local player = game.Players.LocalPlayer
-		local mouse = player:GetMouse()
-	
-		-- Settings
-	
-		bind = "x" -- has to be lowercase
-		bind2 = "c"
-	
-		-- Script
-	
-		mouse.KeyDown:connect(function(key)
-			if key == bind then
-	
-				game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed=120
-				game.StarterGui:SetCore("SendNotification", {
-					Title = "on";
-					Duration = 0.8;
-					Text = "";
-	
-				})
-			end
-		end)
-	
-	
-		mouse.KeyDown:connect(function(key2)
-			if key2 == bind2 then
-				game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed=16
-				game.StarterGui:SetCore("SendNotification", {
-					Title = "off";
-					Duration = 0.8;
-					Text = "";
-				})
-			end
-		end)
-	end)
+game.StarterGui:SetCore("SendNotification", {
+               Title = "SPEED";
+               Duration = 0.3;
+               Text = "";
+                
+})
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+
+-- Settings
+
+bind = "x" -- has to be lowercase
+bind2 = "c"
+
+-- Script
+
+mouse.KeyDown:connect(function(key)
+if key == bind then
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+game.StarterGui:SetCore("SendNotification", {
+               Title = "on";
+               Duration = 0.8;
+               Text = "";
+                
+})
+    end
+end)
+
+
+mouse.KeyDown:connect(function(key2)
+if key2 == bind2 then
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+game.StarterGui:SetCore("SendNotification", {
+               Title = "off";
+               Duration = 0.8;
+               Text = "";
+})
+    end
+end)
 end
 coroutine.wrap(XBVMGTZ_fake_script)()
 local function VBHXZU_fake_script() -- COINS.LocalScript 
