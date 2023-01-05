@@ -221,7 +221,7 @@ game.StarterGui:SetCore("SendNotification", {
 })
     end
 end)
-end
+end)
 coroutine.wrap(XBVMGTZ_fake_script)()
 local function VBHXZU_fake_script() -- COINS.LocalScript 
 	local script = Instance.new('LocalScript', COINS)
